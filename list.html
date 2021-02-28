@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Avaleht</title>
+    <title>Seebid ja du&scaron;igeelid</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -43,7 +43,7 @@
                         <a class="dropdown-item" href="#">Vannisoolad</a>
                         <a class="dropdown-item" href="#">Vannipiimad</a>
                         <a class="dropdown-item" href="#">Vannipommid</a>
-                        <a class="dropdown-item" href="list.html">Seebid ja du&scaron;igeelid</a>
+                        <a class="dropdown-item active" href="list.html">Seebid ja du&scaron;igeelid</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -87,25 +87,28 @@
     <!-- breadcrumb -->
     <section>
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb bg-white my-2">
-                <li class="breadcrumb-item  active">Avaleht</a></li>
+            <ol class="breadcrumb bg-white ml-2">
+                <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+                <li class="breadcrumb-item">Vannitooted</li>
+                <li class="breadcrumb-item active" aria-current="page">Seebid ja du&scaron;igeelid</li>
             </ol>
         </nav>
     </section>
-    <!-- jumbotron --->
-    <!-- TODO! --->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container text-center">
-            <h1 class="display-4">Parimad ilutooted</h1>
-            <p class="lead">kõige paremast veebipoest</p>
-        </div>
-    </div>
     <!-- tooted --->
     <section>
         <div class="container">
-            <h2 class="h mb-3">TOP</h2>
+            <form class="form-inline mb-4">
+                <div class="form-group">
+                    <label for="sort" class="control-label col-lg-4">Sorteeri</label>
+                    <select class="form-control col-lg-8" id="sort">
+                        <option>Populaarsemad</option>
+                        <option>Odavamad enne</option>
+                        <option>Kallimad enne</option>
+                    </select>
+                </div>
+            </form>
             <div class="row">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
                                 class="card-img-top"></a>
                         <div class="card-body">
@@ -115,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
                                 class="card-img-top"></a>
                         <div class="card-body">
@@ -125,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
                                 class="card-img-top"></a>
                         <div class="card-body">
@@ -135,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
                                 class="card-img-top"></a>
                         <div class="card-body">
@@ -145,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
                                 class="card-img-top"></a>
                         <div class="card-body">
@@ -155,7 +158,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
                                 class="card-img-top"></a>
                         <div class="card-body">
